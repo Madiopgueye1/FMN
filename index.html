@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fédération Mawahibou Nafih</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- ═══════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════ -->
+  <!-- NAVIGATION -->
   <nav id="navbar">
-    <div class="nav-logo">
-      Fédération<br>Mawahibou Nafih
-    </div>
+    <div class="nav-logo">Fédération<br>Mawahibou Nafih</div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">À propos</a></li>
       <li><a href="#activites">Activités</a></li>
+      <li><a href="#annonces">Annonces</a></li>
       <li><a href="#zones">Zones</a></li>
       <li><a href="#commissions">Commissions</a></li>
       <li><a href="#adhesion">Adhésion</a></li>
@@ -28,36 +29,96 @@
     </ul>
   </nav>
 
-  <!-- ═══════════════════════════════════
-       HERO
-  ═══════════════════════════════════ -->
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
     <div class="hero-glow"></div>
     <div class="hero-glow-2"></div>
 
     <div class="arabic-decoration">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
 
-    <img src="logo.png" alt="Logo Mawahibou Nafih" class="hero-badge"
-         onerror="this.style.display='none'" />
+    <!-- Logo du dahira -->
+    <img src="logo.png" alt="Logo Mawahibou Nafih" class="hero-badge" onerror="this.style.display='none'" />
 
     <h1 class="hero-title">Fédération Mawahibou Nafih</h1>
+    <p class="arabic-decoration">فيدرالية المواهب النفيه</p>
+    <h3>BEUG AK TOOP SI JEUF  YOU SELLEU</h3>
     <p class="hero-sub">Dahira International Mouride</p>
 
     <p class="hero-desc">
-      Autorisée et nommée par le Khalif Général des Mourides,<br>
+      Autorisée et nommée par le Khalif Général des Mourides, <span>Cheikh Moukhamadoul Mountakha MBACKÉ</span><br>
       notre fédération rayonne aujourd'hui à l'échelle internationale.
     </p>
 
     <div class="hero-badges-row">
-      <span class="badge-pill">🌍 International</span>
-      <span class="badge-pill">🕌 Mouride</span>
-      <span class="badge-pill">🤝 Solidarité</span>
-      <span class="badge-pill">📿 Spiritualité</span>
+      <!-- Badge pills avec photos miniatures -->
+      <span class="badge-pill">
+        <img src="images/badge-international.jpg" alt="International" class="badge-pill-img"
+          onerror="this.style.display='none'">
+        International
+      </span>
+      <span class="badge-pill">
+        <img src="images/badge-mouride.jpg" alt="Mouride" class="badge-pill-img" onerror="this.style.display='none'">
+        Mouride
+      </span>
+      <span class="badge-pill">
+        <img src="images/badge-solidarite.jpg" alt="Solidarité" class="badge-pill-img"
+          onerror="this.style.display='none'">
+        Solidarité
+      </span>
+      <span class="badge-pill">
+        <img src="images/badge-spiritualite.jpg" alt="Spiritualité" class="badge-pill-img"
+          onerror="this.style.display='none'">
+        Spiritualité
+      </span>
     </div>
 
     <div class="hero-cta">
       <a href="#adhesion" class="btn-primary">Devenir Membre</a>
       <a href="#activites" class="btn-outline">Nos Activités</a>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="hero-social">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link facebook"
+        aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link instagram"
+        aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link twitter"
+        aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-link youtube" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social-link tiktok" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+        </svg>
+      </a>
+      <a href="https://wa.me/221767703349" target="_blank" rel="noopener" class="social-link whatsapp"
+        aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+        </svg>
+      </a>
     </div>
 
     <div class="scroll-indicator">
@@ -66,13 +127,10 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       À PROPOS — AUTORISATION DU KHALIF
-  ═══════════════════════════════════ -->
+  <!-- ═══ À PROPOS ═══ -->
   <section id="about">
     <div class="section-inner">
       <div class="about-grid">
-
         <div class="about-text">
           <p class="section-label">Notre Histoire</p>
           <h2 class="section-title">Bénis par le <span>Khalif Général</span></h2>
@@ -83,12 +141,11 @@
             valeurs du Mouridisme.
           </p>
           <p class="section-text" style="margin-top:1rem;">
-            Depuis sa création, le dahira a grandi au-delà des frontières pour devenir
+            Depuis sa création, la fédération a grandi au-delà des frontières pour devenir
             une fédération internationale, portant haut les valeurs spirituelles et
             sociales qui lui ont été transmises.
           </p>
         </div>
-
         <div class="about-visual">
           <div class="about-frame">
             <div class="arabic-large">مَوَاهِبُ نَافِع</div>
@@ -99,14 +156,11 @@
             <p class="khalif-attribution">— Sens du nom Mawahibou Nafih</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       ACTIVITÉS PHARES
-  ═══════════════════════════════════ -->
+  <!-- ═══ ACTIVITÉS ═══ -->
   <section id="activites">
     <div class="section-inner">
       <p class="section-label">Ce que nous faisons</p>
@@ -115,30 +169,50 @@
       <div class="activites-grid">
 
         <div class="activite-card featured">
-          <div class="activite-icon">🕌</div>
+          <!-- 📸 Mets ici une photo du Gamou -->
+          <div class="activite-icon">
+            <img src="images/activite-gamou.jpg" alt="Gamou" class="activite-photo"
+              onerror="this.parentElement.innerHTML='🕌'">
+          </div>
           <h3>Gamou</h3>
-          <p>Grand rassemblement annuel célébré à Dakar — Masalikoul Djinane. Un moment de recueillement, de prière et de fraternité pour tous les membres.</p>
+          <p>Célébration de la naissance du Prophète (PSL) à Dakar — Masalikoul Djinane. Un moment de recueillement, de
+            prière et de fraternité pour tous les membres.</p>
           <span class="activite-tag">Annuel · Dakar</span>
         </div>
 
         <div class="activite-card featured">
-          <div class="activite-icon">🌟</div>
+          <!-- 📸 Mets ici une photo du Ziar à Touba -->
+          <div class="activite-icon">
+            <img src="images/activite-ziar.jpg" alt="Ziar Général" class="activite-photo"
+              onerror="this.parentElement.innerHTML='🌟'">
+          </div>
           <h3>Ziar Général</h3>
-          <p>Visite solennelle chez le Khalif Général des Mourides à Touba. Un privilège spirituel majeur pour la fédération.</p>
+          <p>Visite solennelle chez le Khalif Général des Mourides à Touba. Un privilège spirituel majeur pour la
+            fédération.</p>
           <span class="activite-tag">Annuel · Touba</span>
         </div>
 
         <div class="activite-card">
-          <div class="activite-icon">🤝</div>
+          <!-- 📸 Mets ici une photo de la Rencontre Générale -->
+          <div class="activite-icon">
+            <img src="images/activite-rencontre-generale.jpg" alt="Rencontre Générale" class="activite-photo"
+              onerror="this.parentElement.innerHTML='🤝'">
+          </div>
           <h3>Rencontre Générale</h3>
-          <p>Assemblée de toutes les zones pour faire le bilan, renforcer l'unité et planifier les grandes orientations de la fédération.</p>
-          <span class="activite-tag">Périodique</span>
+          <p>Assemblée de toutes les zones pour faire le bilan, renforcer l'unité et planifier les grandes orientations
+            de la fédération.</p>
+          <span class="activite-tag">Annuel</span>
         </div>
 
         <div class="activite-card">
-          <div class="activite-icon">📅</div>
+          <!-- 📸 Mets ici une photo d'une rencontre mensuelle -->
+          <div class="activite-icon">
+            <img src="images/activite-mensuelle.jpg" alt="Rencontres Mensuelles" class="activite-photo"
+              onerror="this.parentElement.innerHTML='📅'">
+          </div>
           <h3>Rencontres Mensuelles</h3>
-          <p>Chaque zone organise sa propre rencontre mensuelle — prières, tontines sociales, et solidarité au cœur du quartier.</p>
+          <p>La Fédération Mawahibou Nafih organise chaque mois une rencontre dans l'une de ses zones pour se rapprocher
+            le plus possible de ses membres.</p>
           <span class="activite-tag">Mensuel · Par Zone</span>
         </div>
 
@@ -146,103 +220,362 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       ZONES
-  ═══════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════════
+       ANNONCES — ÉVÉNEMENTS À VENIR
+       
+       COMMENT MODIFIER :
+       Pour ajouter/modifier un événement, copie-colle
+       un bloc <div class="annonce-card"> et change :
+         • data-date   → date (AAAA-MM-JJ) pour le compte à rebours
+         • .annonce-categorie → ex: "Gamou", "Ziar", "Réunion"...
+         • .annonce-titre → titre de l'événement
+         • .annonce-date-affichee → date affichée lisiblement
+         • .annonce-lieu → lieu de l'événement
+         • .annonce-desc → description courte
+         • href WhatsApp → numéro + message adapté
+       Pour masquer un événement passé : ajoute class="annonce-card passe"
+  ════════════════════════════════════════════════════ -->
+  <section id="annonces">
+    <div class="section-inner">
+      <p class="section-label">Agenda</p>
+      <h2 class="section-title">Événements <span>À Venir</span></h2>
+      <p class="section-text">Retrouvez ici tous les prochains événements de la Fédération Mawahibou Nafih. Notez les
+        dates et soyez au rendez-vous !</p>
+
+      <!-- ══════════════════════════════
+           LISTE DES ANNONCES
+           Ajoute tes événements ici ↓
+      ══════════════════════════════ -->
+      <div class="annonces-grid">
+
+        <!-- ── ANNONCE 1 ── -->
+        <div class="annonce-card" data-date="2025-08-15">
+          <div class="annonce-header">
+            <span class="annonce-categorie reunion">Rencontre</span>
+            <span class="annonce-statut">À venir</span>
+          </div>
+          <div class="annonce-body">
+            <h3 class="annonce-titre">Rencontre Zone Dakar — Masalikoul Djinane</h3>
+            <div class="annonce-meta">
+              <span class="annonce-date-affichee">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                10 Mai 2026
+              </span>
+              <span class="annonce-lieu">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Dakar — Masalikoul Djinane
+              </span>
+            </div>
+            <p class="annonce-desc">Notre dahira tiendra prochainement une rencontre fraternelle et spirituelle. 
+              Ce sera un moment de prières, de récitation de khassaïdes et d’échanges autour des enseignements de Cheikh Ahmadou Bamba. 
+              L’objectif est de renforcer nos liens, 
+              partager nos expériences et renouveler notre engagement dans le cheminement spirituel.</p>
+            <div class="annonce-countdown" data-date="2026-05-10"></div>
+          </div>
+          <div class="annonce-footer">
+            <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20la%20Rencontre%20Zone%20Dakar."
+              target="_blank" class="btn-annonce">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+              </svg>
+              Plus d'infos sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- ── ANNONCE 2 ── -->
+        <div class="annonce-card" data-date="2025-09-20">
+          <div class="annonce-header">
+            <span class="annonce-categorie ziar">Ziar</span>
+            <span class="annonce-statut">À venir</span>
+          </div>
+          <div class="annonce-body">
+            <h3 class="annonce-titre">Ziar Général — Touba</h3>
+            <div class="annonce-meta">
+              <span class="annonce-date-affichee">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                20 Septembre 2025
+              </span>
+              <span class="annonce-lieu">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Touba — Ville Sainte
+              </span>
+            </div>
+            <p class="annonce-desc">Visite annuelle chez le Khalif Général des Mourides. Un moment fort de la vie de la
+              fédération, ouvert à tous les membres.</p>
+            <div class="annonce-countdown" data-date="2025-09-20"></div>
+          </div>
+          <div class="annonce-footer">
+            <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20le%20Ziar%20Général."
+              target="_blank" class="btn-annonce">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+              </svg>
+              Plus d'infos sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- ── ANNONCE 3 ── -->
+        <div class="annonce-card" data-date="2025-10-05">
+          <div class="annonce-header">
+            <span class="annonce-categorie reunion">Réunion</span>
+            <span class="annonce-statut">À venir</span>
+          </div>
+          <div class="annonce-body">
+            <h3 class="annonce-titre">Rencontre Mensuelle — Zone Dakar</h3>
+            <div class="annonce-meta">
+              <span class="annonce-date-affichee">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                5 Octobre 2025
+              </span>
+              <span class="annonce-lieu">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Dakar (lieu à confirmer)
+              </span>
+            </div>
+            <p class="annonce-desc">Rencontre mensuelle de la Zone Dakar. Bilan des activités, cotisations et
+              programmation du mois suivant. Présence obligatoire pour tous les membres.</p>
+            <div class="annonce-countdown" data-date="2025-10-05"></div>
+          </div>
+          <div class="annonce-footer">
+            <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d%27informations%20sur%20la%20Rencontre%20Mensuelle%20de%20la%20Zone%20Dakar."
+              target="_blank" class="btn-annonce">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+              </svg>
+              Plus d'infos sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- ══════════════════════════════
+             ➕ AJOUTE UN ÉVÉNEMENT ICI
+             Copie-colle un bloc ci-dessus
+             et modifie les informations
+        ══════════════════════════════ -->
+
+      </div>
+      <!-- FIN DES ANNONCES -->
+
+    </div>
+  </section>
+
+  <!-- ═══ ZONES ═══ -->
   <section id="zones">
     <div class="section-inner">
       <p class="section-label">Notre présence</p>
       <h2 class="section-title">Nos <span>Zones</span></h2>
-      <p class="section-text">La fédération est organisée en zones pour une proximité maximale avec ses membres, du Sénégal à la diaspora.</p>
+      <p class="section-text">La fédération est organisée en zones pour une proximité maximale avec ses membres, du
+        Sénégal à la diaspora.</p>
 
       <div class="zones-grid">
+
         <div class="zone-card">
-          <div class="zone-flag">🏙️</div>
+          <!-- 📸 Photo de Dakar -->
+          <div class="zone-flag">
+            <img src="images/zone-dakar.jpg" alt="Zone Dakar" class="zone-photo"
+              onerror="this.parentElement.innerHTML='🏙️'">
+          </div>
           <h3>Zone Dakar</h3>
-          <p>Capitale & environs</p>
+          <p>Capitale &amp; environs</p>
         </div>
+
         <div class="zone-card">
-          <div class="zone-flag">🌆</div>
+          <!-- 📸 Photo de Thiès -->
+          <div class="zone-flag">
+            <img src="images/zone-thies.jpg" alt="Zone Thiès" class="zone-photo"
+              onerror="this.parentElement.innerHTML='🌆'">
+          </div>
           <h3>Zone Thiès</h3>
           <p>Région de Thiès</p>
         </div>
+
         <div class="zone-card">
-          <div class="zone-flag">🌿</div>
+          <!-- 📸 Photo de Louga -->
+          <div class="zone-flag">
+            <img src="images/zone-louga.jpg" alt="Zone Louga" class="zone-photo"
+              onerror="this.parentElement.innerHTML='🌿'">
+          </div>
           <h3>Zone Louga</h3>
           <p>Région de Louga</p>
         </div>
+
         <div class="zone-card">
-          <div class="zone-flag">🌾</div>
+          <!-- 📸 Photo de Diourbel -->
+          <div class="zone-flag">
+            <img src="images/zone-diourbel.jpg" alt="Zone Diourbel" class="zone-photo"
+              onerror="this.parentElement.innerHTML='🌾'">
+          </div>
           <h3>Zone Diourbel</h3>
           <p>Région de Diourbel</p>
         </div>
+
         <div class="zone-card highlight">
-          <div class="zone-flag">🕌</div>
+          <!-- 📸 Photo de Touba (ville sainte) -->
+          <div class="zone-flag">
+            <img src="images/zone-touba.jpg" alt="Zone Touba" class="zone-photo"
+              onerror="this.parentElement.innerHTML='🕌'">
+          </div>
           <h3>Zone Touba</h3>
           <p>Ville Sainte Mouride</p>
         </div>
+
         <div class="zone-card">
-          <div class="zone-flag">✈️</div>
+          <!-- 📸 Photo représentant la diaspora -->
+          <div class="zone-flag">
+            <img src="images/zone-diaspora.jpg" alt="Zone Diaspora" class="zone-photo"
+              onerror="this.parentElement.innerHTML='✈️'">
+          </div>
           <h3>Zone Diaspora</h3>
           <p>International</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       COMMISSIONS
-  ═══════════════════════════════════ -->
+  <!-- ═══ COMMISSIONS ═══ -->
   <section id="commissions">
     <div class="section-inner">
       <p class="section-label">Organisation interne</p>
       <h2 class="section-title">Nos <span>Commissions</span></h2>
-      <p class="section-text">Chaque membre intègre une commission selon ses talents et sa disponibilité. Ensemble, nous assurons le bon fonctionnement de la fédération.</p>
+      <p class="section-text">Chaque membre intègre une commission selon ses talents et sa disponibilité. Ensemble, nous
+        assurons le bon fonctionnement de la fédération.</p>
 
       <div class="commissions-grid">
+
         <div class="commission-item">
-          <span class="comm-icon">⚙️</span>
+          <!-- 📸 Photo commission Organisation -->
+          <span class="comm-icon">
+            <img src="images/commission-organisation.jpg" alt="Organisation" class="comm-photo"
+              onerror="this.parentElement.innerHTML='⚙️'">
+          </span>
           <span>Organisation</span>
         </div>
+
         <div class="commission-item">
-          <span class="comm-icon">💰</span>
+          <!-- 📸 Photo commission Finance -->
+          <span class="comm-icon">
+            <img src="images/commission-finance.jpg" alt="Finance" class="comm-photo"
+              onerror="this.parentElement.innerHTML='💰'">
+          </span>
           <span>Finance</span>
         </div>
+
         <div class="commission-item">
-          <span class="comm-icon">📿</span>
-          <span>Ahlu Café</span>
+          <!-- 📸 Photo commission Communication -->
+          <span class="comm-icon">
+            <img src="images/commission-communication.jpg" alt="Communication" class="comm-photo"
+              onerror="this.parentElement.innerHTML='📣'">
+          </span>
+          <span>Communication</span>
         </div>
+
         <div class="commission-item">
-          <span class="comm-icon">🍽️</span>
-          <span>Cuisine</span>
+          <!-- 📸 Photo commission Audiovisuel -->
+          <span class="comm-icon">
+            <img src="images/commission-audiovisuel.jpg" alt="Audiovisuel" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🎥'">
+          </span>
+          <span>Audiovisuel</span>
         </div>
+
         <div class="commission-item">
-          <span class="comm-icon">🎭</span>
-          <span>Culturel</span>
-        </div>
-        <div class="commission-item">
-          <span class="comm-icon">🛡️</span>
-          <span>Sécurité</span>
-        </div>
-        <div class="commission-item">
-          <span class="comm-icon">🤲</span>
+          <!-- 📸 Photo commission Servir -->
+          <span class="comm-icon">
+            <img src="images/commission-servir.jpg" alt="Servir" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🤲'">
+          </span>
           <span>Servir</span>
         </div>
+
         <div class="commission-item">
-          <span class="comm-icon">🧹</span>
-          <span>Hygiène</span>
-        </div>
-        <div class="commission-item">
-          <span class="comm-icon">🏥</span>
+          <!-- 📸 Photo commission Santé -->
+          <span class="comm-icon">
+            <img src="images/commission-sante.jpg" alt="Santé" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🏥'">
+          </span>
           <span>Santé</span>
         </div>
+
+        <div class="commission-item">
+          <!-- 📸 Photo commission Hygiène -->
+          <span class="comm-icon">
+            <img src="images/commission-hygiene.jpg" alt="Hygiène" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🧹'">
+          </span>
+          <span>Hygiène</span>
+        </div>
+
+        <div class="commission-item">
+          <!-- 📸 Photo commission Sécurité -->
+          <span class="comm-icon">
+            <img src="images/commission-securite.jpg" alt="Sécurité" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🛡️'">
+          </span>
+          <span>Sécurité</span>
+        </div>
+
+        <div class="commission-item">
+          <!-- 📸 Photo commission Culturel -->
+          <span class="comm-icon">
+            <img src="images/commission-culturel.jpg" alt="Culturel" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🎭'">
+          </span>
+          <span>Culturel</span>
+        </div>
+
+        <div class="commission-item">
+          <!-- 📸 Photo commission Ahlu Café -->
+          <span class="comm-icon">
+            <img src="images/commission-ahlucafe.jpg" alt="Ahlu Café" class="comm-photo"
+              onerror="this.parentElement.innerHTML='📿'">
+          </span>
+          <span>Ahlu Café</span>
+        </div>
+
+        <div class="commission-item">
+          <!-- 📸 Photo commission Cuisine -->
+          <span class="comm-icon">
+            <img src="images/commission-cuisine.jpg" alt="Cuisine" class="comm-photo"
+              onerror="this.parentElement.innerHTML='🍽️'">
+          </span>
+          <span>Cuisine</span>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       ADHÉSION
-  ═══════════════════════════════════ -->
+  <!-- ═══ ADHÉSION ═══ -->
   <section id="adhesion">
     <div class="section-inner">
       <p class="section-label">Rejoignez-nous</p>
@@ -251,14 +584,30 @@
       <div class="adhesion-grid">
 
         <div class="adhesion-card">
-          <div class="adhesion-icon">🪪</div>
+          <!-- 📸 Photo de la carte de membre -->
+          <div class="adhesion-icon">
+            <img src="images/adhesion-carte-membre.jpg" alt="Carte de Membre" class="adhesion-photo"
+              onerror="this.parentElement.innerHTML='🪪'">
+          </div>
           <h3>Carte de Membre</h3>
           <div class="price">1 000 <span>FCFA</span></div>
-          <p>Une fois acquise, la carte officielle vous donne accès à tous les avantages et activités de la fédération.</p>
+          <p>La carte officielle vous donne accès à tous les avantages et activités de la fédération.</p>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20obtenir%20ma%20Carte%20de%20Membre%20de%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander via WhatsApp
+          </a>
         </div>
 
         <div class="adhesion-card featured-card">
-          <div class="adhesion-icon">📅</div>
+          <!-- 📸 Photo symbolisant la cotisation / réunion mensuelle -->
+          <div class="adhesion-icon">
+            <img src="images/adhesion-cotisation.jpg" alt="Cotisation Mensuelle" class="adhesion-photo"
+              onerror="this.parentElement.innerHTML='📅'">
+          </div>
           <h3>Cotisation Mensuelle</h3>
           <div class="price">1 150 <span>FCFA / mois</span></div>
           <ul class="cotisation-detail">
@@ -266,13 +615,34 @@
             <li>✦ <strong>150 FCFA</strong> — Fonds Social</li>
           </ul>
           <p>Le fonds social permet d'aider les membres dans les moments difficiles.</p>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20m%27acquitter%20de%20ma%20cotisation%20mensuelle%20à%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Payer via WhatsApp
+          </a>
         </div>
 
         <div class="adhesion-card">
-          <div class="adhesion-icon">👕</div>
+          <!-- 📸 Photo de la tenue officielle Lakhasay -->
+          <div class="adhesion-icon">
+            <img src="images/adhesion-lakhasay.jpg" alt="Tenue Officielle" class="adhesion-photo"
+              onerror="this.parentElement.innerHTML='👕'">
+          </div>
           <h3>Tenue Officielle</h3>
           <div class="price">Lakhasay</div>
-          <p>Couleurs officielles : <strong>bleu &amp; blanc</strong>. Chaque membre porte fièrement le gilet de sa commission lors des événements.</p>
+          <p>Couleurs officielles : <strong>bleu &amp; blanc</strong>. Chaque membre porte fièrement le gilet de sa
+            commission lors des événements.</p>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20commander%20la%20Tenue%20Officielle%20(Lakhasay)%20de%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander via WhatsApp
+          </a>
         </div>
 
       </div>
@@ -280,97 +650,202 @@
       <div class="engagements">
         <h3>Engagements du Membre</h3>
         <div class="engage-list">
-          <div class="engage-item">📜 Respecter le règlement intérieur</div>
-          <div class="engage-item">👔 Porter les tenues lors des événements</div>
-          <div class="engage-item">🗓️ Être actif et participer aux rencontres</div>
-          <div class="engage-item">💳 S'acquitter de la cotisation mensuelle</div>
-          <div class="engage-item">🏅 Intégrer une commission</div>
-          <div class="engage-item">🤝 Respecter la fraternité entre membres</div>
+          <div class="engage-item">
+            <img src="images/engage-reglement.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            Respecter le règlement intérieur
+          </div>
+          <div class="engage-item">
+            <img src="images/engage-tenue.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            Porter les tenues lors des événements
+          </div>
+          <div class="engage-item">
+            <img src="images/engage-rencontre.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            Être actif et participer aux rencontres
+          </div>
+          <div class="engage-item">
+            <img src="images/engage-cotisation.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            S'acquitter de la cotisation mensuelle
+          </div>
+          <div class="engage-item">
+            <img src="images/engage-commission.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            Intégrer une commission
+          </div>
+          <div class="engage-item">
+            <img src="images/engage-fraternite.jpg" alt="" class="engage-photo" onerror="this.style.display='none'">
+            Respecter la fraternité entre membres
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       BOUTIQUE
-  ═══════════════════════════════════ -->
+  <!-- ═══ BOUTIQUE ═══ -->
   <section id="boutique">
     <div class="section-inner">
       <p class="section-label">Produits officiels</p>
       <h2 class="section-title">Notre <span>Boutique</span></h2>
-      <p class="section-text">Tous les produits de la Fédération Mawahibou Nafih. Porter nos tenues, c'est afficher son appartenance et soutenir notre communauté.</p>
+      <p class="section-text">Tous les produits de la Fédération Mawahibou Nafih. Porter nos tenues, c'est afficher son
+        appartenance et soutenir notre communauté.</p>
 
       <div class="boutique-grid">
 
         <div class="produit-card">
-          <div class="produit-img">☕</div>
+          <!-- 📸 Photo du café Mawahibou Nafih -->
+          <div class="produit-img">
+            <img src="images/produit-cafe.jpg" alt="Café Mawahibou Nafih" class="produit-photo"
+              onerror="this.parentElement.innerHTML='☕'">
+          </div>
           <h3>Café Mawahibou Nafih</h3>
           <p>Notre café signature — un savoureux mélange exclusif à notre fédération.</p>
-          <a href="#contact" class="btn-produit">Commander</a>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Café%20Mawahibou%20Nafih."
+            target="_blank" class="btn-produit btn-wa">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander
+          </a>
         </div>
 
         <div class="produit-card featured-produit">
-          <div class="produit-img">👘</div>
+          <!-- 📸 Photo du Lakhasay officiel -->
+          <div class="produit-img">
+            <img src="images/produit-lakhasay.jpg" alt="Lakhasay Officiel" class="produit-photo"
+              onerror="this.parentElement.innerHTML='👘'">
+          </div>
           <h3>Lakhasay Officiel</h3>
           <p>Tenue complète bleu &amp; blanc — l'uniforme de la fédération pour les grandes occasions.</p>
-          <a href="#contact" class="btn-produit">Commander</a>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Lakhasay%20Officiel%20de%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-produit btn-wa">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander
+          </a>
         </div>
 
         <div class="produit-card">
-          <div class="produit-img">🦺</div>
+          <!-- 📸 Photo du gilet de commission -->
+          <div class="produit-img">
+            <img src="images/produit-gilet.jpg" alt="Gilet de Commission" class="produit-photo"
+              onerror="this.parentElement.innerHTML='🦺'">
+          </div>
           <h3>Gilet de Commission</h3>
           <p>Gilet personnalisé selon votre commission. Disponible pour toutes les commissions.</p>
-          <a href="#contact" class="btn-produit">Commander</a>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20commander%20un%20Gilet%20de%20Commission%20de%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-produit btn-wa">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander
+          </a>
         </div>
 
         <div class="produit-card">
-          <div class="produit-img">🧕</div>
+          <!-- 📸 Photo du Derr Bayy Fall -->
+          <div class="produit-img">
+            <img src="images/produit-derr.jpg" alt="Derr Bayy Fall" class="produit-photo"
+              onerror="this.parentElement.innerHTML='🧣'">
+          </div>
           <h3>Derr Bayy Fall</h3>
           <p>Tenue traditionnelle dans les couleurs de la fédération, disponible en plusieurs tailles.</p>
-          <a href="#contact" class="btn-produit">Commander</a>
+          <a href="https://wa.me/221767703349?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Derr%20Bayy%20Fall%20de%20la%20Fédération%20Mawahibou%20Nafih."
+            target="_blank" class="btn-produit btn-wa">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Commander
+          </a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       CONTACT
-  ═══════════════════════════════════ -->
+  <!-- ═══ CONTACT ═══ -->
   <section id="contact">
     <div class="section-inner">
       <p class="section-label">Nous écrire</p>
       <h2 class="section-title">Nous <span>Contacter</span></h2>
 
       <div class="contact-grid">
-
         <div class="contact-info">
           <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <strong>Siège</strong>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></span>
+            <div><strong>Siège</strong>
               <p>Dakar, Sénégal</p>
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📧</span>
-            <div>
-              <strong>Email</strong>
-              <p>contact@mawahibounafih.org</p>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg></span>
+            <div><strong>Email</strong>
+              <p><a href="mailto:federationfmn@gmail.com"
+                  style="color:var(--sky-light);text-decoration:none;">federationfmn@gmail.com</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📱</span>
-            <div>
-              <strong>WhatsApp</strong>
-              <p>+221 XX XXX XX XX</p>
+            <span class="contact-icon" style="color:#25D366;">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+              </svg>
+            </span>
+            <div><strong>WhatsApp</strong>
+              <p><a href="https://wa.me/221767703349" style="color:var(--sky-light);text-decoration:none;">+221 76 770
+                  33 49</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">🌐</span>
-            <div>
-              <strong>Présence</strong>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg></span>
+            <div><strong>Présence</strong>
               <p>Sénégal &amp; International</p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <p class="contact-social-title">Suivez-nous sur les réseaux</p>
+            <div class="contact-social-row">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link facebook"
+                aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg></a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link instagram"
+                aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg></a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link twitter"
+                aria-label="Twitter / X"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a>
+              <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-link youtube"
+                aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg></a>
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social-link tiktok"
+                aria-label="TikTok"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+                </svg></a>
             </div>
           </div>
         </div>
@@ -385,6 +860,10 @@
             <input type="email" id="email" placeholder="votre@email.com" required />
           </div>
           <div class="form-group">
+            <label for="tel">Téléphone / WhatsApp</label>
+            <input type="tel" id="tel" placeholder="+221 XX XXX XX XX" />
+          </div>
+          <div class="form-group">
             <label for="zone">Zone</label>
             <select id="zone">
               <option value="">Choisir votre zone</option>
@@ -397,38 +876,114 @@
             </select>
           </div>
           <div class="form-group">
+            <label for="commission">Commission</label>
+            <select id="commission">
+              <option value="">Choisir votre commission</option>
+              <option>Organisation</option>
+              <option>Finance</option>
+              <option>Communication</option>
+              <option>Audiovisuel</option>
+              <option>Santé</option>
+              <option>Hygiène</option>
+              <option>Servir</option>
+              <option>Sécurité</option>
+              <option>Culturel</option>
+              <option>Cuisine</option>
+              <option>Ahlu Café</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sujet">Type de demande</label>
+            <select id="sujet">
+              <option value="">Sélectionner</option>
+              <option>Demande d'adhésion</option>
+              <option>Commande boutique</option>
+              <option>Renseignements généraux</option>
+              <option>Partenariat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="message">Message</label>
             <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Envoyer</button>
-          <p id="form-success" style="display:none;color:#5dc3e8;margin-top:1rem;text-align:center;">✅ Message envoyé ! Nous vous répondrons bientôt.</p>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Envoyer le
+            message</button>
+          <a href="https://wa.me/221767703349?text=Bonjour%20Fédération%20Mawahibou%20Nafih%2C%20je%20vous%20contacte%20depuis%20votre%20site%20web."
+            target="_blank" class="btn-whatsapp-alt">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+            Ou contactez-nous directement sur WhatsApp
+          </a>
+          <p id="form-success" style="display:none;color:#5dc3e8;margin-top:1rem;text-align:center;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+              style="vertical-align:middle;margin-right:6px;">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Message envoyé ! Nous vous répondrons bientôt.
+          </p>
         </form>
-
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════ -->
+  <!-- ═══ FOOTER ═══ -->
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
         <div class="arabic-small">بِسْمِ اللَّهِ</div>
         <p class="footer-name">Fédération Mawahibou Nafih</p>
+        <p class="arabic-decoration">فيدرالية المواهب النفيه</p>
         <p class="footer-tagline">Dahira International Mouride</p>
       </div>
       <div class="footer-links">
         <a href="#about">À propos</a>
         <a href="#activites">Activités</a>
         <a href="#zones">Zones</a>
+        <a href="#commissions">Commissions</a>
         <a href="#adhesion">Adhésion</a>
         <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
       </div>
-      <p class="footer-copy">© 2025 Fédération Mawahibou Nafih — Tous droits réservés</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link facebook"
+          aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link instagram"
+          aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener" class="social-link twitter"
+          aria-label="Twitter / X"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-link youtube"
+          aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg></a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social-link tiktok"
+          aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+          </svg></a>
+        <a href="https://wa.me/221767703349" target="_blank" rel="noopener" class="social-link whatsapp"
+          aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+          </svg></a>
+      </div>
+      <p class="footer-copy">© 2026 Fédération Mawahibou Nafih — Tous droits réservés</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

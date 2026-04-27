@@ -118,7 +118,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ───────────────────────────────────────
-     4. SMOOTH SCROLL SUR LES ANCRES
+     4. COMPTE À REBOURS DES ANNONCES
+  ─────────────────────────────────────── */
+  function updateCountdowns() {
+    document.querySelectorAll('.annonce-countdown[data-date]').forEach(el => {
+      const target = new Date(el.getAttribute('data-date') + 'T00:00:00');
+      const diff   = target - new Date();
+
+      if (diff <= 0) {
+        el.innerHTML = '<span class="countdown-passe">Événement terminé</span>';
+        const card = el.closest('.annonce-card');
+        if (card) card.classList.add('passe');
+        return;
+      }
+
+      const j = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+
+      el.innerHTML = `
+        <div class="countdown-box"><span class="countdown-num">${j}</span><span class="countdown-lbl">Jours</span></div>
+        <div class="countdown-box"><span class="countdown-num">${String(h).padStart(2,'0')}</span><span class="countdown-lbl">Heures</span></div>
+        <div class="countdown-box"><span class="countdown-num">${String(m).padStart(2,'0')}</span><span class="countdown-lbl">Min</span></div>
+        <div class="countdown-box"><span class="countdown-num">${String(s).padStart(2,'0')}</span><span class="countdown-lbl">Sec</span></div>
+      `;
+    });
+  }
+  updateCountdowns();
+  setInterval(updateCountdowns, 1000);
+
+  // Annonces dans le reveal scroll
+  document.querySelectorAll('.annonce-card').forEach((el, i) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${i * 100}ms`;
+    revealObserver.observe(el);
+  });
+
+
+  /* ───────────────────────────────────────
+     5. SMOOTH SCROLL SUR LES ANCRES
      - Compense la hauteur fixe de la nav
   ─────────────────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
